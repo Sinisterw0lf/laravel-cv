@@ -1,22 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-		<meta charset="UTF-8">
-		<meta
-				content="width=device-width, initial-scale=1.0"
-				name="viewport"
-		>
-		<meta
-				content="ie=edge"
-				http-equiv="X-UA-Compatible"
-		>
-		<title>Document</title>
-</head>
-
-<body>
-		<p>hello world</p>
-		<p>{{ asset('') }}</p>
-</body>
-
-</html>
+<x-layouts.layout title="CV home">
+		<div class="justify-between md:flex">
+				<div class="left h-full md:w-1/2">
+						@include('partials._left-box')
+				</div>
+				<div class="right bg-gray-200 md:w-2/3">
+						@include('partials._right-box')
+				</div>
+		</div>
+</x-layouts.layout>
